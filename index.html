@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Completo</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+
+        .outro-sistema {
+        display: none;
+        }
+        
+        .legenda{
+            align-items: center;
+            margin-left: 30px;
+        }
+        #container {
+            max-width: 720px;
+            margin-left: 600px;
+            border: 5px solid;
+            background-color: rgb(218, 218, 218);
+            border-color: rgb(190, 190, 190);
+            align-items:center ;
+            margin-top: 60px;
+            border-radius: 10px;
+
+        }
+        .campos{
+            margin-left: 30px;
+            max-width: 660px;
+        }
+        .btn-btn-primary{
+            margin-top: 30px;
+        }
+        .form-check{
+            margin-left: 30px;
+        }
+
+
+
+    </style>
+</head>
+<body> 
+    <div id="aaa"></div>
+    <p></p>
+    <h2 class="text-center">FORMULARIO DE EXPERIENCIA EM PROGAMAÇÃO</h2>
+    
+    <div id="container">
+        
+            <div class="campos">
+                <p></p>
+                <label for="nome" class="form-label">Nome Completo</label>
+                <input type="text" class="form-control" id="nome" name="nome" required>
+            </div>
+            <p></p>
+            <div class="campos">
+                <label for="idade" class="form-label">Idade</label>
+                <input type="number" class="form-control" id="idade" name="idade" required>
+            </div>
+            <p></p>
+            <div class="campos">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <p></p>
+            <div class="campos">
+                <label for="data_nascimento" class="form-label">Data de Nascimento</label>
+                <input type="date" class="form-control" id="data_nascimento" name="data_nascimento" required>
+            </div>
+            <p></p>
+            <div class="campos">
+                <label for="senha" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="senha" name="senha" required>
+            </div>
+            <p></p>
+            <fieldset class="">
+                <p></p>
+                <legend class="legenda">linguagem de programação que você conhece</legend>
+                
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="css" name="tecnologias[]" value="CSS">
+                    <label class="form-check-label" for="css">CSS</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="javascript" name="tecnologias[]" value="JavaScript">
+                    <label class="form-check-label" for="javascript">JavaScript</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="php" name="tecnologias[]" value="PHP">
+                    <label class="form-check-label" for="php">PHP</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="python" name="tecnologias[]" value="Python">
+                    <label class="form-check-label" for="python">Python</label>
+                </div>
+            </fieldset>
+            <p></p>
+            <fieldset class="">
+                <p></p>
+                <legend class="legenda">Nível de experiência em HTML</legend>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="iniciante" name="nivel_html" value="Iniciante" required>
+                    <label class="form-check-label" for="iniciante">Iniciante</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="intermediario" name="nivel_html" value="Intermediário">
+                    <label class="form-check-label" for="intermediario">Intermediário</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="avancado" name="nivel_html" value="Avançado">
+                    <label class="form-check-label" for="avancado">Avançado</label>
+                </div><p></p>
+            </fieldset>
+
+            <div class="campos">
+                <label for="sistema" class="form-label">Sistema Operacional Principal</label>
+                <select class="form-select" id="sistema" name="sistema">
+                    <option value="Windows">Windows</option>
+                    <option value="Linux">Linux</option>
+                    <option value="macOS">macOS</option>
+                    <option value="Outro">Outro</option>
+                </select>
+            </div>
+       
+            <div class="mb-3 outro-sistema" id="outroSistemaDiv">
+                <p></p>
+                <label for="outro-sistema" class="form-label">Qual é o seu sistema operacional?</label>
+                <input type="text" class="form-control" id="outro-sistema" name="outro-sistema">
+                <p></p>
+            </div>
+            <p></p>
+            <div class="mb-3 text-center">
+                <p></p>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+   
+    </div>
+<p></p>
+</body>
+</html>
